@@ -1,0 +1,207 @@
+
+
+        table {
+            margin: 0 auto;
+            font-size: large;
+            border: 1px solid black;
+            width: 800px;
+            border-collapse: collapse;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            z-index: 3;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-weight: lighter;
+            z-index: 0;
+        }
+
+
+        th {
+            background-color: #55608f;
+            border: 1px solid black;
+            z-index: 2;
+        }
+
+
+
+        @keyframes waveAnimation {
+            from {
+                background-position-x: 0%;
+            }
+
+            to {
+                background-position-x: 200%;
+            }
+        }
+
+        @keyframes move-background {
+            from {
+                -webkit-transform: translate3d(0px, 0px, 0px);
+            }
+
+            to {
+                -webkit-transform: translate3d(1000px, 0px, 0px);
+            }
+        }
+
+        @-webkit-keyframes move-background {
+            from {
+                -webkit-transform: translate3d(0px, 0px, 0px);
+            }
+
+            to {
+                -webkit-transform: translate3d(1000px, 0px, 0px);
+            }
+        }
+
+        @-moz-keyframes move-background {
+            from {
+                -webkit-transform: translate3d(0px, 0px, 0px);
+            }
+
+            to {
+                -webkit-transform: translate3d(1000px, 0px, 0px);
+            }
+        }
+
+        @-webkit-keyframes move-background {
+            from {
+                -webkit-transform: translate3d(0px, 0px, 0px);
+            }
+
+            to {
+                -webkit-transform: translate3d(1000px, 0px, 0px);
+            }
+        }
+
+        @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+        body {
+            margin: 0;
+        }
+
+
+        p {
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 1px;
+            font-size: 14px;
+            color: #333333;
+        }
+
+        .header {
+            
+            text-align: center;
+            background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+            color: white;
+        }
+
+        .inner-header {
+            height: 65vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .waves {
+            position: relative;
+            width: 100%;
+            height: 15vh;
+            margin-bottom: -7px;
+        }
+
+        .content {
+            position: relative;
+            height: 20vh;
+            text-align: center;
+            background-color: white;
+        }
+
+/* ===========================================================================
+                     Animation
+============================================================================== */
+
+        .parallax>use {
+            animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+        }
+
+        .parallax>use:nth-child(1) {
+            animation-delay: -2s;
+            animation-duration: 7s;
+        }
+
+        .parallax>use:nth-child(2) {
+            animation-delay: -3s;
+            animation-duration: 10s;
+        }
+
+        .parallax>use:nth-child(3) {
+            animation-delay: -4s;
+            animation-duration: 13s;
+        }
+
+        .parallax>use:nth-child(4) {
+            animation-delay: -5s;
+            animation-duration: 20s;
+        }
+
+        @keyframes move-forever {
+            0% {
+                transform: translate3d(-90px, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(85px, 0, 0);
+            }
+        }
+
+
+#pseudo_input, #mdp_input, #form_button {
+    border: 3px solid rgba(0, 0, 0, 0.692);
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+}
+form , h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.692);
+    font-size: 50px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+}
+
+body {
+    background-color: rgba(80, 4, 40, 0.678);
+}
+.waverota {
+    transform: rotate(180deg);
+}
+
+.inner-header {
+    background-color: #fff;
+    height: 2000px;
+    width: 100%
+}

@@ -1,0 +1,248 @@
+
+/* ===========================================================================
+                     BODY
+============================================================================== */
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  background: #0b202b;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+body,
+html {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  font-family: "Neutraface Book", "-apple-system", BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* ===========================================================================
+                     Titre
+============================================================================== */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.h2 {
+  margin-left: 10000px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 100;
+}
+
+.title {
+  margin-left: 250px;
+  margin-top: 100px;
+}
+
+
+/* ===========================================================================
+                     OFFICE
+============================================================================== */
+
+.office {
+  margin-bottom: 5px;
+  margin-left: 100px;
+  margin-top: 100px;
+
+}
+/* ===========================================================================
+                     Contact
+============================================================================== */
+.contact-form {
+  position: relative;
+  z-index: 100;
+}
+.contact-form .cs-options li,
+.contact-form .cs-placeholder,
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  width: 100%;
+  padding: 0.5rem;
+  background: 0 0;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 1rem;
+}
+.contact-form textarea {
+  resize: none;
+}
+.contact-form input::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+.contact-form input:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+.contact-form input::-ms-input-placeholder,
+.contact-form textarea::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+.contact-form .cs-placeholder {
+  background: 0 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact-form .form-button {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+}
+.contact-form .error {
+  font-size: 13px;
+  color: #fff;
+  background: #852c2c;
+  font-weight: 700;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+.contact-form .has--error .error {
+  padding: 0.5rem;
+}
+.contact-form .success-message {
+  display: none;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.contact-form .success-message.is--active {
+  display: block;
+}
+/* ===========================================================================
+                     Connect
+============================================================================== */
+.connect-footer {
+  margin-bottom: 5rem;
+}
+.connect-footer .column {
+  margin-bottom: 2.5rem;
+}
+.connect-footer .label {
+  font-family: "Neutraface Demi", "-apple-system", BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  margin-bottom: 1.5rem;
+  border-top: 1px solid rgba(236, 242, 247, 0.1);
+  padding-top: 1rem;
+}
+.connect-footer .column.social li {
+  display: inline-block;
+  width: 100%;
+}
+.connect-footer .column.social a {
+  color: currentColor;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+
+@media only screen and (min-width: 48em) {
+ 
+  .connect-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .connect-footer .column:nth-child(1) {
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+  .connect-footer .column:nth-child(2),
+  .connect-footer .column:nth-child(3) {
+    width: calc(50% - 8px);
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+  }
+  .connect-footer .column:nth-child(3) {
+    margin-left: auto;
+  }
+
+}
+
+@media only screen and (min-width: 64em) {
+
+  .contact-form {
+    max-width: 75%;
+    margin: 0 auto 3rem auto;
+  }
+  .connect {
+    max-width: 1440px;
+    margin-top: 4rem;
+  }
+
+  .connect-footer .column {
+    width: calc(33% - 16px) !important;
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 1 auto !important;
+    flex: 0 1 auto !important;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .connect-footer .column:nth-child(1) {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+}
+
+
+
+
+/* ===========================================================================
+                     BUTON
+============================================================================== */
+
+a,
+button {
+  background: 0 0;
+  border: none;
+  outline: 0;
+}
+
+
+
